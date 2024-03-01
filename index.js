@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'your_email@gmail.com',
-        pass: 'your_password'
+        user: 'fredy09rizky@gmail.com',
+        pass: 'acpnmxmndtgomnqi'
     }
 });
 
@@ -20,7 +20,7 @@ app.post('/send-email', (req, res) => {
     const { to, subject, text } = req.body;
 
     const mailOptions = {
-        from: 'your_email@gmail.com',
+        from: 'fredy09rizky@gmail.com',
         to: to,
         subject: subject,
         text: text
